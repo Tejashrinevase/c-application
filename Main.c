@@ -1,24 +1,53 @@
-/* Problem Statement: Accept number from user and display the even number of that number */
-
-/* Algorithm:
+/* Problem statement:
+                    Accept one charecter from user and Check the given character  is vowels or not	.
+	*/
+	
+/*	
+Algorithm:
 		START:
-			Accept one number from user as iNo;
-			create one counter as iCnt and initialise it as 1;
-			continue the counter till the duble of the number which given by user;
-			if icnt divide completely by 2 return that number;
-			continue the process till the iteration;
+		
+			Accept one character from user as cValue;
+			compare the character with vowels
+			if result is true
+			then
+			    print it is vowels;
+			else
+				print it is not vowels;
 		END
-
+			
 */
+
 #include "Header.h"
+
+
 
 int main()
 {
-	int iNo=0;
-
-	printf("Enter the number:");
-	scanf("%d",&iNo);
+	char cValue='\0';
+	BOOL bRet= FALSE;
 	
-	PrintEven(iNo);
-
+	printf("Enter the one character:\n");
+	scanf("%c",&cValue);
+	
+	bRetet=CheckVowel(cValue);
+	
+	if (bRet== TRUE)
+	{
+		printf("It Is vowel");
+	}
+	else
+	{
+		printf("It Is not a vowels");
+	}
+	
+	return 0;
 }
+	
+	
+	
+	
+	
+	
+	
+	
+	

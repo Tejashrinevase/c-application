@@ -1,3 +1,8 @@
-#include<stdio.h>
+#include<stdio.h> 
 
-void PrintEven();
+typedef char  BOOL;
+
+#define TRUE 1
+#define FALSE 0;
+
+BOOL CheckVowel(char);

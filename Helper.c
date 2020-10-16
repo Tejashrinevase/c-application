@@ -1,24 +1,25 @@
-
-
-/////////////////////////////////////////////////////////////
-/// Function Name: PrintEven;
-/// Input: integer
-/// Output: integer
-/// Discription: it is used to display even number
-/// author: Tejashri H Nevase
-/// Date: 1 Aug 2020	
-////////////////////////////////////////////////////////////
+	///////////////////////////////////////////////////
+	/// 
+	///	Function name: DisplayConvert
+	/// Input: character
+	/// Output : characetr
+	/// Discription: It is used to check the given character is vowel or not
+	/// Date: 2 August 2020
+	/// Author Name: Tejashri Hanumant Nevase
+	///
+	/////////////////////////////////////////////////////
 #include "Header.h"
 
- void PrintEven(int iNo)
+BOOL CheckVowel(char cValue)
 {
-
-	int iCnt=0;
-	for(iCnt=2;iCnt<=iNo*2;iCnt++)
+	if(cValue=='a' || cValue=='e'||cValue=='i'|| cValue=='o'|| cValue=='u' 
+	    ||  cValue=='A' || cValue=='E'||cValue=='I'|| cValue=='O'|| cValue=='U' )
 	{
-		if(iCnt%2==0)
-		{
-			printf("%d\n",iCnt);
-		}
+		return TRUE;
 	}
+	else
+	{
+		return FALSE;
+	}
+	
 }
